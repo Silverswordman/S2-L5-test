@@ -121,10 +121,15 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ];
 
+let i = 0;
 
+while (numericArray[i] !== numericArray[14]) {
+  console.log(numericArray[i]);
 
-// while (numericArray[0] < numericArray[13]) 
- 
+  i++;
+}
+
+// while (numericArray[0] < numericArray[13])
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -132,3 +137,27 @@ const numericArray = [
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+
+const Alphabet = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case "g":
+      Alphabet.push(7);
+      break;
+    case "n":
+      Alphabet.push(14);
+      break;
+    case "u":
+      Alphabet.push(21);
+      break;
+    case "z":
+      Alphabet.push(26);
+      break;
+    case "d":
+      Alphabet.push(4);
+      break;
+  }
+}
+
+console.log(Alphabet);
